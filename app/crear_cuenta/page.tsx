@@ -1,4 +1,6 @@
 "use client";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -33,11 +35,16 @@ const RegisterForm: React.FC = () => {
   };
 
   return (
+    
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <form
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-2xl shadow-md w-full max-w-md"
       >
+         <Link href="/" className="flex items-center text-green-700 hover:text-green-800 mb-4">
+    <ArrowLeft className="w-5 h-5 mr-1" />
+    Volver al inicio
+  </Link>
         <h2 className="text-2xl font-bold mb-6 text-center text-[#16A24B]">
           Registro - Finanzas Educativas
         </h2>
