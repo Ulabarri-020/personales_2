@@ -26,10 +26,12 @@ export default function Home() {
 
   <header className="bg-white bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 w-full z-20 shadow-sm">
     <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div className="flex items-center space-x-2">
-        <PiggyBank className="h-8 w-8 text-green-600" />
-        <h1 className="text-2xl font-bold text-green-700">AhorraT</h1>
-      </div>
+       <div className="flex items-center space-x-2">
+          {/* Logo desde carpeta public */}
+          <img src="/logo.png" alt="Logo AhorraT" width={32} height={32} />
+         
+          <h1 className="text-2xl font-bold text-green-700">AhorraT</h1>
+        </div>
 
       {/* Botón hamburguesa */}
       <div className="lg:hidden z-30">
@@ -185,41 +187,57 @@ export default function Home() {
       </section>
 
       {/* Testimonios */}
-      <section className="py-16 bg-green-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-green-800 mb-12">Lo que dicen nuestros usuarios</h2>
+<section className="py-16 bg-green-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center text-green-800 mb-12">
+      Lo que dicen nuestros usuarios
+    </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <p className="text-gray-600 mb-6">
-                "Gracias a AhorrarT he aprendido a organizar mis finanzas y he logrado ahorrar para mi primer auto. Los
-                consejos son muy prácticos y fáciles de aplicar."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-green-200 rounded-full mr-4"></div>
-                <div>
-                  <h4 className="font-bold text-green-800">María González</h4>
-                  <p className="text-gray-500 text-sm">Estudiante universitaria</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <p className="text-gray-600 mb-6">
-                "Nunca entendí bien cómo manejar mi dinero hasta que encontré esta plataforma. Ahora tengo un fondo de
-                emergencia y estoy invirtiendo para mi futuro."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-green-200 rounded-full mr-4"></div>
-                <div>
-                  <h4 className="font-bold text-green-800">Carlos Rodríguez</h4>
-                  <p className="text-gray-500 text-sm">Profesional independiente</p>
-                </div>
-              </div>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Testimonio 1 */}
+      <div className="bg-white p-8 rounded-xl shadow-sm">
+        <p className="text-gray-600 mb-6">
+          "Gracias a AhorrarT he aprendido a organizar mis finanzas y he logrado ahorrar para mi primer auto. Los
+          consejos son muy prácticos y fáciles de aplicar."
+        </p>
+        <div className="flex items-center">
+          <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img
+              src="/mujer.png"
+              alt="María González"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h4 className="font-bold text-green-800">María González</h4>
+            <p className="text-gray-500 text-sm">Estudiante universitaria</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Testimonio 2 */}
+      <div className="bg-white p-8 rounded-xl shadow-sm">
+        <p className="text-gray-600 mb-6">
+          "Nunca entendí bien cómo manejar mi dinero hasta que encontré esta plataforma. Ahora tengo un fondo de
+          emergencia y estoy invirtiendo para mi futuro."
+        </p>
+        <div className="flex items-center">
+          <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img
+              src="/iconos_personas.png"
+              alt="Carlos Rodríguez"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h4 className="font-bold text-green-800">Carlos Rodríguez</h4>
+            <p className="text-gray-500 text-sm">Profesional independiente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-20 bg-green-700 text-white">
@@ -229,10 +247,10 @@ export default function Home() {
             Regístrate hoy y da el primer paso para transformar tu relación con el dinero.
           </p>
           <Link
-            href="/cuenta"
+            href="/crear_cuenta"
             className="px-8 py-4 bg-white text-green-700 rounded-lg font-bold hover:bg-green-50 transition inline-flex items-center"
           >
-            Crear mi cuenta <ArrowRight className="ml-2 h-5 w-5" />
+            Crear  cuenta <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
       </section>

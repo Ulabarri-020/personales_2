@@ -186,7 +186,7 @@ export default function CuentaPage() {
         <div className="container mx-auto px-4 py-4">
           <Link href="/" className="flex items-center space-x-2 text-green-700 hover:text-green-600 transition">
             <ArrowLeft className="h-5 w-5" />
-            <span className="ml-2 text-xl font-bold">AhorrarT</span>
+            <span className="ml-2 text-xl font-bold">AhorraT</span>
           </Link>
         </div>
       </header>
