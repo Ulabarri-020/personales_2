@@ -24,11 +24,11 @@ export default function Home() {
     <div className="fixed inset-0 bg-white bg-opacity-70 backdrop-blur-sm z-10"></div>
   )}
 
-  <header className="bg-white shadow-sm relative z-20">
+  <header className="bg-white bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 w-full z-20 shadow-sm">
     <div className="container mx-auto px-4 py-4 flex justify-between items-center">
       <div className="flex items-center space-x-2">
         <PiggyBank className="h-8 w-8 text-green-600" />
-        <h1 className="text-2xl font-bold text-green-700">AhorrarT</h1>
+        <h1 className="text-2xl font-bold text-green-700">AhorraT</h1>
       </div>
 
       {/* Botón hamburguesa */}
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/placeholder.svg?height=400&width=400"
+              src="/principal.jpg?height=400&width=400"
               alt="Ilustración de finanzas personales"
               className="max-w-full h-auto rounded-lg shadow-lg"
             />
